@@ -1,0 +1,43 @@
+@media(max-width: 950px){
+
+    .home {
+        grid-template-columns: 1fr;
+    }
+
+    .lists {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .list {
+        grid-template-columns: 1fr 5fr;
+    }
+
+    .card {
+        margin-bottom: 40px;
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 20px); /* Para telas menores que 950px, os cards ocupam 50% da largura do container */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media(max-width: 650px){
+
+    .lists {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        flex: 1 1 calc(100% - 20px); /* Para telas menores que 650px, os cards ocupam 100% da largura do container */
+        max-width: calc(100% - 20px);
+    }
+}
+
+
