@@ -39,7 +39,7 @@ body {
 .heading-3 {
     font-size: 20px;
     text-transform: uppercase;
-    color: #8214dc;
+    color: #6DB3D9;
     margin-bottom: 10px;
 }
 
@@ -66,13 +66,21 @@ body {
 }
 
 .sub-heading .importent {
-    color: #8214dc;
+    color: #6db3d9;
 }
 
 h1 span{
-    color: #8214dc;
+    color: #6db3d9;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700px;
+}
+
+
+/* */
+
+header > a > .arrow  {
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 
@@ -125,7 +133,7 @@ blockquote {
     margin-bottom: 40px;
     position: relative;
     border: .1px solid #555;
-    box-shadow: 10px 20px #8214dc;
+    box-shadow: 10px 20px #6DB3D9;
     text-align: justify;
 
 }
@@ -220,7 +228,7 @@ blockquote::before {
     font-weight: 500;
     align-items: center;
     gap: 0.25rem;
-    background-color:#8214dc;
+    background-color:#6DB3D9;
     padding: 4px 8px;
     border-radius: 4px;
 }

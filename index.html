@@ -1,147 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jornal Criativo: boas notícias e conforto</title>
+    <title>Jornal Criativo: Universo Geek</title>
 
-    <!--link css-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
-    <link rel="stylesheet" href="logo.css">
-    
+    <!--links css-->
+    <link rel="stylesheet" href="estilização/inicio.css">
+
 </head>
 <body>
-    
-<div class="container"> 
-    <!--header start-->
+    <!--header starts-->
     <header>
-
-        <h1 class="heading-1">Jornal <span>Criativo</span>
-        </h1>
-        <!--logo start-->
-       
-        <!--logo end-->
-
-        <div class="sub-heading">
-            <p>Quinta-feira, <span> 14 de março, 2024</span></p>
-            <p class="importent"> icentivando sua imaginação</p>
-        </div>
-
-
+        <h1>Jornal Criativo</h1>
+        <i id="burger" class="material-symbols-outlined" onclick="clickMenu()">Categorias</i>
+        <!--menu starts-->
+        <menu id="itens">
+            <ul>
+                <li><a href="#Enterterimento">Enterterimento</a></li>
+                <li><a href="#Tecnológia">Tecnológia</a></li>
+                <li><a href="#Natureza">Natureza</a></li>
+                <li><a href="#Culinária">Culinária</a></li>
+                <li><a href="#Saúde">Saúde</a></li>
+            </ul>
+        </menu>
+        <!--menu ends-->
     </header>
-    <!--header end-->
-    
-    <!--main start-->
-    <div class="main">
-        <div class="home">
-            <!--div esquerda-->
-            <div class="left">
-                <img src="img/img-jornal.jpeg" class="home-img" alt="Foto de um jornal">
+    <!--header ends-->
 
-                <h2 class="heading-2">
-                    Inovação na Reportagem: Explorando Novos Horizontes no Jornalismo
-                </h2>
-            </div>
-
-            <!--div direita-->
-            <div class="rigth">
-                <h3 class="heading-3">Últimas nóticias</h3>
-                <div class="lists">
-                    <div class="list">
-                        <img src="img/img-catavento.jpeg" alt="foto de um cataveno">
-                        <p>Energia Renovável e Biodiversidade: Como a Transição para Fontes Sustentáveis Afeta a Vida Animal</p>
-                    </div>
-
-                    <div class="list">
-                        <img src="img/img-galinha.jpeg" alt="foto de uma galinha na floresta">
-                        <p>Ovos, Sustentabilidade e Tecnologia: A Revolução da Produção de Galinhas Criadas Livres</p>
-                    </div>
-
-                    <div class="list">
-                        <img src="img/img-praia.jpeg" alt="foto do mar">
-                        <p>Turismo Sustentável de Praia: Tecnologias Verdes Protegem os Ecossistemas Costeiros e a Vida Marinha</p>
-                    </div>
-
-                    <div class="list">
-                        <img src="img/img-transito-.jpeg" alt="transito em uma cidade grande">
-                        <p>Trânsito Urbano Sustentável: Soluções Tecnológicas para Reduzir Atropelamentos de Animais nas Estradas</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <!--article start-->
+    <!--main starts-->
+        <main>
+            <!--article starts-->
             <article>
-                <p>No cenário dinâmico do jornalismo contemporâneo, uma nova onda de criatividade e inovação está transformando a maneira como as notícias são produzidas e consumidas. Longe de se apegar às formas convencionais, repórteres em todo o mundo estão explorando novas técnicas e plataformas para contar histórias de maneiras mais envolventes e impactantes. Desde o uso de realidade aumentada até narrativas multimídia imersivas, os jornalistas estão adotando uma abordagem mais experimental e interativa para envolver seus públicos. Essa mudança não apenas revitaliza a indústria do jornalismo, mas também fortalece a conexão entre repórteres e leitores.</p>
 
+               
 
-                <p>Um exemplo inspirador dessa nova era de reportagem é o projeto "Vozes da Comunidade", que combina jornalismo participativo com tecnologia inovadora para dar voz às comunidades marginalizadas. Através de uma plataforma online interativa, os residentes locais podem compartilhar suas histórias e experiências, que são então transformadas em reportagens colaborativas por uma equipe de jornalistas.</p>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="img/ferias.jpeg" alt="montanhas">
+                        <div class="card-content">
+                            <h3>Férias nas montanhas</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                               Similique ipsum maiores, suscipit mollitia deleniti voluptatem quidem?</p>
+                               <a href="news1.html" class="btn">Saiba mais</a>
+                        </div>
+                    </div>
+            
+                    <div class="card">
+                        <img src="img/cabra.jpg" alt="cabra">
+                        <div class="card-content">
+                            <h3>Cabra-das-rochosas
+                            </h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                               Similique ipsum maiores, suscipit mollitia deleniti voluptatem quidem?</p>
+                               <a href="news2.html" class="btn">Saiba mais</a>
+                        </div>
+                    </div>
+            
+                    <div class="card">
+                        <img src="img/mulher-cabelo.jpeg" alt="menina no pc">
+                        <div class="card-content">
+                            <h3>Cabelos e tendências </h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                               Similique ipsum maiores, suscipit mollitia deleniti voluptatem quidem?</p>
+                               <a href="news3.html" class="btn">Saiba mais</a>
+                        </div>
+                    </div> 
 
-                <p>Além disso, o uso estratégico das redes sociais e das plataformas de streaming está permitindo que os jornalistas alcancem públicos mais amplos e diversificados. A transmissão ao vivo de eventos e reportagens exclusivas atrai espectadores de todo o mundo, enquanto as campanhas de mídia social engajam os leitores de maneiras mais diretas e pessoais.Essa tendência de inovação não se limita apenas à forma como as histórias são contadas, mas também à forma como são financiadas. Modelos de assinatura digital e financiamento coletivo estão emergindo como alternativas viáveis ​​à publicidade tradicional, permitindo que os meios de comunicação independentes prosperem e mantenham sua integridade editorial.À medida que o jornalismo continua sua evolução em direção a um futuro cada vez mais digital e interativo, uma coisa é certa: a criatividade e a inovação serão os motores que impulsionam essa transformação. Ao abraçar novas tecnologias e abordagens, os jornalistas estão não apenas redefinindo o que é possível dentro da indústria, mas também garantindo que as vozes das pessoas comuns continuem sendo ouvidas e valorizadas.</p>
+                    <div class="card">
+                        <img src="img/img-avancoTec.jpg" alt="tecnologia no pc">
+                        <div class="card-content">
+                            <h3>Avanços Tecnológicos</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                               Similique ipsum maiores, suscipit mollitia deleniti voluptatem quidem?</p>
+                               <a href="news4.html" class="btn">Saiba mais</a>
+                        </div>
+                    </div> 
+
+                    <div class="card">
+                        <img src="img/img-jornal.jpeg" alt="menina no pc">
+                        <div class="card-content">
+                            <h3>Jornal Criativo</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                               Similique ipsum maiores, suscipit mollitia deleniti voluptatem quidem?</p>
+                               <a href="news5.html" class="btn">Saiba mais</a>
+                        </div>
+                    </div> 
+
+                    <div class="card">
+                        <img src="img/img-cao.jpeg" alt="menina no pc">
+                        <div class="card-content">
+                            <h3>aaaa</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                               Similique ipsum maiores, suscipit mollitia deleniti voluptatem quidem?</p>
+                               <a href="news6.html" class="btn">Saiba mais</a>
+                        </div>
+                    </div> 
+                </div>
             </article>
-            <!--article end-->
+            <!--article ends-->
 
-            <!--Citação start-->
-            <blockquote>
-                <p>À medida que o jornalismo continua sua evolução em direção a um futuro cada vez mais digital e interativo, uma coisa é certa: a criatividade e a inovação serão os motores que impulsionam essa transformação. Ao abraçar novas tecnologias e abordagens, os jornalistas estão não apenas redefinindo o que é possível dentro da indústria, mas também garantindo que as vozes das pessoas comuns continuem sendo ouvidas e valorizadas</p>
-                <p>  - Hellen Martins </p>
-            </blockquote>
 
-            <!--cards start-->
-            <div class="cards">
-                <div class="card">
-                    <div class="image"> 
-                        <img src="img/img-meioAmbiente.jpg" alt="lâmpada no meio ambiente">
-                    </div>
-                    <div class="content">
-                        <a href="#">
-                            <span class="title">Soluções Inovadoras para Desafios Ambientais e de Saúde</span>
-                        </a>
-                        <p class="desc">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque esse accusamus unde voluptatibus temporibus, optio consectetur.
-                        </p>
-                        <a href="#" class="action">Saiba mais</a>
-                    </div>
-                </div>
+
             
-                <div class="card">
-                    <div class="image">
-                        <img src="img/img-avancoTec.jpg" alt="Um notebook em um tronco de árvore">
-                    </div>
-                    <div class="content">
-                        <a href="#">
-                            <span class="title">Avanços Tecnológicos Impulsionam Práticas Ambientalmente Responsáveis</span>
-                        </a>
-                        <p class="desc">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque esse accusamus unde voluptatibus temporibus, optio consectetur.
-                        </p>
-                        <a href="#" class="action">Saiba mais</a>
-                    </div>
-                </div>
-            
-                <div class="card">
-                    <div class="image"> 
-                        <img src="img/img-dispositivos.jpg" alt="Um notebook e dois smartphones em uma mesa">
-                    </div>
-                    <div class="content">
-                        <a href="#">
-                            <span class="title">Saúde Digital: Como as Tecnologias Móveis</span>
-                        </a>
-                        <p class="desc">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque esse accusamus unde voluptatibus temporibus, optio consectetur.
-                        </p>
-                        <a href="#" class="action">Saiba mais</a>
-                    </div>
-                </div>
-            </div>
-            <!--cards end-->
+        </main>
+    <!--main ends-->
 
-
-        </div>
-    </div>
-    <!--main end-->
-</div>
-    </div>
+    <!--script link-->
+    <script src="script/script.js"></script>
 </body>
 </html>
