@@ -3,16 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jornal Criativo: Universo Geek</title>
+    <meta name="theme-color" content="#6db3d9">
+
+    <title>Jornal Criativo: noticias do mundo</title>
 
     <!--links css-->
-    <link rel="stylesheet" href="estilização/inicio.css">
+    <link rel="stylesheet" href="main.css">
+
+    <!--Manifest json-->
+    <link rel="manifest" href="manifest.json">
+
+    <script>
+        if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful');
+    }, function(err) {
+      // Registration failed
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+    </script>
+
+     
 
 </head>
 <body>
     <!--header starts-->
     <header>
         <h1>Jornal Criativo</h1>
+
+        <!--contato-->
+        
+        <div class="Conato">
+            <a  href="mailto:jornalcriativo@gmail.com.br?subject=Conato da web: tenho interesse no jornal criativo&cc=JornalCriativo@gmail.com&bcc=luiz@gmail.com&body=Olá, tudo bem? Estou entrando em contato, pois queria receber mais informações sobre o jornal criativo!">
+                <svg width="39" height="28" viewBox="0 0 39 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M35.1581 0.27306C36.2869 0.27306 37.2894 0.785497 37.9201 1.57811L19.6011 16.1267L1.44538 1.8423C2.05242 0.901213 3.1473 0.27306 4.39711 0.27306H35.1581ZM0.940826 24.4918V4.4239L13.9681 14.6734L0.967681 24.9017C0.949961 24.7674 0.940826 24.6306 0.940826 24.4918ZM2.13225 26.964C2.73883 27.4627 3.53074 27.7646 4.39711 27.7646H35.1581C35.9027 27.7646 36.5924 27.5416 37.1566 27.1623L23.3136 16.1684L20.8243 18.1454C20.1202 18.7046 19.0946 18.7068 18.3879 18.1507L15.861 16.1627L2.13225 26.964ZM25.1961 14.6734L38.5199 25.2549C38.5817 25.0101 38.6144 24.7545 38.6144 24.4918V4.01682L25.1961 14.6734Z" fill="white"/>
+                </svg>
+            </a>
+        </div>
+
+        <button id="askButton" target="_blank">Ativar Localização</button>
+
+        <div id="target"></div>
+  
+
         <i id="burger" class="material-symbols-outlined" onclick="clickMenu()">Categorias</i>
         <!--menu starts-->
         <menu id="itens">
@@ -25,6 +62,7 @@
             </ul>
         </menu>
         <!--menu ends-->
+        
     </header>
     <!--header ends-->
 
@@ -88,7 +126,7 @@
                     </div> 
 
                     <div class="card">
-                        <img src="img/img-cao.jpeg" alt="menina no pc">
+                        <img src="/img/img-cao.jpeg" alt="menina no pc">
                         <div class="card-content">
                             <h3>aaaa</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -99,14 +137,18 @@
                 </div>
             </article>
             <!--article ends-->
-
-
-
-            
         </main>
+
+        
     <!--main ends-->
 
     <!--script link-->
-    <script src="script/script.js"></script>
+    <script src="script.js"></script>
+    <script src="sw.js"> </script>
+
+    <!--Server-worker-->
+    
 </body>
+
+
 </html>

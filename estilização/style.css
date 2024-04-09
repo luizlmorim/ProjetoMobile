@@ -15,14 +15,11 @@ body {
 }
 
 
-
 /* header */
 
 .container {
     max-width: 1500px;
 }
-
-      
 
 
 .heading-1 {
@@ -76,13 +73,10 @@ h1 span{
 }
 
 
-/* */
-
 header > a > .arrow  {
     height: 1.5rem;
     width: 1.5rem;
 }
-
 
 /* home */
 
@@ -147,22 +141,6 @@ blockquote::before {
     opacity: .3;
     font-size: 150px;
 }
-
-/* cards 
-
-.cards{
-    columns: 25ch 3;
-    gap: 40;
-    margin-bottom: 40px;
-}
-
-.card {
-    font-size: 20px;
-    border: 1px solid;
-    padding: 10px 20px;
-    break-inside: avoid;
-
-}*/
 
 /* cards */
 .cards {
@@ -233,3 +211,28 @@ blockquote::before {
     border-radius: 4px;
 }
 
+footer {
+    background-color: #6DB3D9;
+    z-index: 1;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed; 
+    width: 100%; 
+    bottom: 0; 
+    }
+    
+footer div ul{
+    flex: 1;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+footer div ul a {
+    display: inline-flex;
+    justify-content: baseline;
+    color: #fff9f9;
+    text-decoration: unset;
+}
