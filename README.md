@@ -14,4 +14,5 @@ dispositivo que estiverem utilizando.
 
 - HTML5
 - CSS3
+- JS
 
