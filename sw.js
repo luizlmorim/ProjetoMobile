@@ -1,12 +1,11 @@
 var CACHE_NAME = 'my-web-app-cache';
 var urlsToCache = [
-  '/',
   '/index.html',
   '/main.css',
   '/script.js',
   '/img/ferias.jpeg',
-  'img/cabra.jpg"',
-  'img/mulher-cabelo.jpeg',
+  '/img/cabra.jpg',
+  '/img/mulher-cabelo.jpeg',
   '/img/img-avancoTec.jpg',
   'img/img-jornal.jpeg',
   '/img/img-cao.jpeg',
